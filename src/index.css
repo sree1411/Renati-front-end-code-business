@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ProductCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* ProductCard.css */
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #2563eb;
+  }
+  
+
+  .cartCard{
+    display: flex;
+    flex-direction: column;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+  }
+
+
+  .company-name {
+    background-image: linear-gradient(to right, #4f93ff, #0056b3); /* Gradient colors */
+    color: #ffffff; /* Text color */
+    padding: 8px 16px; /* Adjust padding */
+    border-radius: 4px; /* Rounded corners */
+  }
+
+
+
+ 
+  header {
+    background-color: #336699; /* Set background color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-family: Arial, sans-serif; /* Change font family */
+    font-weight: bold; /* Make text bold */
+    font-size: 24px; /* Adjust font size */
+    color: #ffffff; /* Set font color */
+    padding: 10px 20px; /* Add padding */
+    position: relative; /* Set position */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  header::after {
+    content: ' Renati business'; /* Text content */
+    position: absolute; /* Set position */
+    top: 0; /* Align to the top */
+    left: -100%; /* Move text outside the header */
+    animation: moveText 10s linear infinite; /* Apply animation */
+  }
+  
+  header::after {
+    content: ' Renati business'; /* Text content */
+    position: absolute; /* Set position */
+    top: 0; /* Align to the top */
+    left: -10%; /* Move text outside the header */
+    animation: moveText 10s linear infinite; /* Apply animation */
+  }
+
+  @keyframes moveText {
+    to {
+      left: 80%; /* Move text to the right */
+    }
+  }
+  
+
+  .headerpart{
+    text-align: center;
+     margin-top: 10px;
+  }
