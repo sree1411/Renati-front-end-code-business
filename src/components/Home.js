@@ -1,14 +1,14 @@
-import { useNavigate } from 'react-router';
+// import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Login } from '../pages/Login';
 import { CarosilComponents } from '../separateComponents/CarosilComponents';
 
 export const Home = () => {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
 
-  function handleClick() {
-    navigate('/login');
-  }
+  // function handleClick() {
+  //   navigate('/login');
+  // }
 
   return (
     <div className="grid grid-cols-3 gap-4">

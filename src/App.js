@@ -1,6 +1,5 @@
  import './App.css';
 import { Header } from './components/Header';
-import { Header1 } from './components/Header1';
 import { AllRoutes } from './routes/AllRoutes';
 
 
